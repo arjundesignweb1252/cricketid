@@ -1,0 +1,1177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+
+    
+    <style>
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  #myHeader{
+    height: auto;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: linear-gradient(90deg, rgb(20, 52, 92) 0%, rgb(24, 23, 23) 65%, rgb(71, 37, 22) 87%, rgb(71, 54, 21) 93%);
+   
+  }
+  .header {
+  color: white;
+  z-index: 1;
+  display: block;
+  }
+  /* <header> */
+.rock{
+    width: 60px;
+}
+.button-section2 {
+text-align: center;
+   padding: auto;
+}
+  
+  .button-section2 .button {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px 30px;
+    background-color: white;
+    background: linear-gradient(to left,white, gray);
+    color: #fff;
+    color: black;
+    border: none;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 5px;
+    transform: skew(-20deg);
+    
+  }
+  .btn-primary{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transform: skew(-20deg);
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: #ff5f1f;
+  }
+  .btn-warning{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transform: skew(-20deg);
+    display: inline-block;
+    padding: 10px 30px;
+  }
+  .lotus{
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    position: relative;
+  }
+  .lotus h1{
+text-align: center;
+position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  /* about-section-start */
+  .about{
+    width: 100%;
+    height: auto;
+    /* border: 1px solid black; */
+    /* position: relative; */
+    background-color: rgb(25, 25, 25);
+  }
+ .about .container{
+    width: 100%;
+    height: auto;
+    /* border: 1px solid black; */
+    /* position: relative; */
+    background-color: rgb(25, 25, 25);
+
+ }
+ .about .container .row .about_content01{
+    width: 50%;
+    height: auto;
+    /* border: 1px solid black; */
+ }
+ .about .container .row .about_content01 h1{
+    color: rgb(255, 204, 0);
+    font-weight: bold;
+    margin-top: 10px;
+ }
+ .about .container .row .about_content01 h1:after{
+    content: "";
+    display: block;
+    width: 100px;
+    margin: 10px 0px;
+    height: 4px;
+    background-color: rgb(255, 204, 0);
+    border-radius: 5px;
+ }
+ .about .container .row .about_content01 p{
+    line-height: 30px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 17px;
+    color: white;
+    text-align: justify;
+ }
+ .about .container .row .about_img{
+    width: 50%;
+    height: auto;
+    /* border: 1px solid black; */
+ }
+ .about .container .row .about_img img{
+    width: 100%;
+    height: auto;
+    /* border: 1px solid black; */
+    padding: 10px;
+    margin-top: 50px;
+ }
+
+
+  /* about-section-end */
+
+  /* exchange-id-start */
+  .exchange{
+    width: 100%;
+    height: auto;
+    border: 1px solid black;
+    background-color: black;
+  }
+  .exchange .container{
+    width: 100%;
+    height: auto;
+    /* border: 1px solid black; */
+    margin-top: 20px;
+  }
+  .exchange .container .row .exchange_content{
+    width: 100%;
+    height: auto;
+    /* border: 1px solid black; */
+  }
+  .exchange .container .row .exchange_content h1{
+    color: yellow;
+  }
+  .exchange .container .row .exchange_content p{
+    color: #fff;
+    line-height: 25px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    text-align: justify;
+  }
+
+  /* exchange-id-end */
+
+  /* goexchange-start */
+  .goexchange{
+    width: 100%;
+    height: auto;
+    border: 1px solid black;
+    background-color: rgb(28, 28, 28);
+  }
+  .goexchange .container{
+    width: 100%;
+    height: auto;
+    /* border: 1px solid black; */
+    margin-top: 20px;
+  }
+  .goexchange .container .row .goexhange_content{
+    width: 100%;
+    height: auto;
+    /* border: 1px solid black; */
+  }
+  .goexchange .container .row .goexhange_content h2{
+    color: yellow;
+  }
+  .goexchange .container .row .goexhange_content p{
+    color: #fff;
+    line-height: 25px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    text-align: justify;
+  }
+  /* goexchange-end */
+
+  /* demo-section-start */
+  .demo{
+    width: 100%;
+    height: auto;
+    border: 1px solid black;
+    background-color: black;
+  }
+  .demo .container{
+    width: 100%;
+    height: auto;
+    /* border: 1px solid black; */
+    margin-top: 50px;
+  }
+  .demo .container .row .demo_img{
+    /* width: 0%; */
+    height: auto;
+    /* border: 1px solid black; */
+  }
+  .demo .container .row .demo_img img{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+  .demo .container .row .demo_content{
+    /* width: 50%; */
+    height: auto;
+    /* border: 1px solid black; */
+    position: relative;
+  }
+  .demo .container .row .demo_content .demoid_content{
+    width: 100%;
+    height: auto;
+    /* border: 1px solid black; */
+    border-radius: 5px;
+    background-color: rgb(23, 23, 23);
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    box-shadow: 2px 4px 10px gray,
+    -2px -4px 10px gray;
+    color: #fff;
+    transform: translate(-50%, -50%);
+  }
+   .lines::after{
+    content: "";
+    display: block;
+width: 100%;
+
+height: 1px;
+background-color: #ff5f1f;
+margin: 15px 10px;
+
+  }
+  .demo .container .row .demo_content .demoid_content h1{
+    margin-top: 5px;
+  }
+  .demo .container .row .demo_content .demoid_content h1::after{
+    content: "";
+    display: block;
+    background-color: #ff5f1f;
+    margin: 5px 4px;
+    width: 100px;
+    height: 5px;
+    /* border-radius: 4px; */
+  }
+  .demo .container .row .demo_content .demoid_content p{
+    padding: 5px;
+  }
+  .demo .container .row .demo_content .demoid_content button{
+    padding: 5px 20px;
+    border: none;
+    background-color: #ff5f1f;
+    color: #fff;
+    border-radius: 4px;
+  }
+  /* demo-section-end */
+
+  /* games-section-start */
+  .games{
+    width: 100%;
+    height: auto;
+    border: 1px solid black;
+    background-color: rgb(32, 32, 32);
+  }
+  .games .container{
+    width: 100%;
+    height: auto;
+    /* border: 1px solid black; */
+    margin-top: 20px;
+  }
+  .games .container h1{
+color: yellow;
+  }
+  .games .container p{
+    line-height: 30px;
+    color: #fff;
+    text-align: justify;
+  }
+  /* games-section-end */
+
+  /* conclusion-start */
+  .conculsion{
+    width: 100%;
+    height: auto;
+    border: 1px solid black;
+    background-color: black;
+  }
+  .conculsion .container{
+    width: 100%;
+    height: auto;
+    /* border: 1px solid black; */
+    margin-top: 20px;
+    padding: 10px;
+  }
+  .conculsion .container .row .conclusion_content h1{
+    color: yellow;
+  }
+  .conculsion .container .row .conclusion_content{
+    width: 100%;
+    height: auto;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    background-image: linear-gradient(to bottom, rgb(7, 13, 49),rgb(40, 7, 102));
+  }
+  .conculsion .container .row .conclusion_content p{
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+  }
+  .conculsion .container .row .conclusion_content a button{
+    position: relative;
+    left: 45%;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff5f1f;
+    color: #fff;
+  }
+  /* conclusion-end */
+.footer{
+    width: 100%;
+    height: auto;
+    /* border: 1px solid black; */
+    background-color: rgb(28, 28, 28);
+}
+.footer .row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer .row .footer1{
+    width: 20%;
+    height: auto;
+    /* border: 1px solid black; */
+}
+.footer .row .footer1 img{
+    width: 100px;
+    height: 70px;
+    border-radius: 20px;
+    margin: 20px 20%;
+}
+.footer .row .footer1 h5{
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+.footer .row .footer1 p{
+    line-height: 32px;
+    color: white;
+}
+.footer .row .footer1 .icons{
+    width: 100%;
+    height: 70px;
+    /* border: 1px solid white; */
+  
+}
+.footer .row .footer1 .icons ul{
+    display: flex;
+    list-style: none;
+}
+.footer .row .footer1 .icons ul li{
+    padding: 10px;
+    font-size: 30px;
+}
+.footer .row .footer1 .icons ul li .fa-instagram{
+    color: blueviolet;
+}
+.footer .row .footer1 .icons ul li .fa-facebook{
+    color: rgb(43, 73, 226);
+}
+.footer .row .footer1 .icons ul li .fa-whatsapp{
+    color: rgb(24, 224, 34);
+}
+.footer .row .footer2{
+    width: 40%;
+    height: auto;
+    /* border: 1px solid black; */
+    display: flex;
+}
+
+.footer .row .footer2  .betting{
+    width: 50%;
+    height: auto;
+    /* border: 1px solid black; */
+}
+.footer .row .footer2  .betting h5{
+    margin-top: 30px;
+    font-size: 24px;
+    font-weight: 500;
+    color: yellow;
+}
+.footer .row .footer2  .betting ul{
+    list-style: none;
+    margin-top: 20px;
+}
+.footer .row .footer2  .betting ul li{
+    padding-top: 20px;
+}
+.footer .row .footer2  .betting ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.footer .row .footer2  .betting ul li a:hover{
+    color: rgb(209, 127, 5);
+}
+.footer .row .footer2  .betting01{
+    width: 50%;
+    height: auto;
+    /* border: 1px solid black; */
+}
+.footer .row .footer2  .betting01 h5{
+    margin-top: 30px;
+    font-size: 24px;
+    font-weight: 500;
+    color: yellow;
+}
+.footer .row .footer2  .betting01 ul{
+    list-style: none;
+    margin-top: 20px;
+}
+.footer .row .footer2  .betting01 ul li{
+    padding-top: 20px;
+}
+.footer .row .footer2  .betting01 ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.footer .row .footer2  .betting01 ul li a:hover{
+    color: rgb(209, 127, 5);
+}
+
+.footer .row .footer3{
+    width: 40%;
+    height: auto;
+    /* border: 1px solid black; */
+    display: flex;
+}
+.footer .row .footer3  .betting{
+    width: 50%;
+    height: auto;
+    /* border: 1px solid black; */
+}
+.footer .row .footer3  .betting ul{
+    list-style: none;
+    margin-top: 20px;
+}
+.footer .row .footer3  .betting ul li{
+    padding-top: 20px;
+}
+.footer .row .footer3  .betting ul li a{
+    text-decoration: none;
+    
+    color: rgb(255, 255, 255);
+}
+.footer .row .footer3  .betting ul li a:hover{
+    color: rgb(209, 127, 5);
+}
+.footer .row .footer3  .betting h5{
+    margin-top: 30px;
+    font-size: 24px;
+    font-weight: 500;
+    color: yellow;
+}
+.footer .row .footer3  .betting01{
+    width: 50%;
+    height: auto;
+    /* border: 1px solid black; */
+}
+.footer .row .footer3  .betting01 h5{
+    margin-top: 30px;
+    font-size: 24px;
+    font-weight: 500;
+    color: yellow;
+}
+.footer .row .footer3  .betting01 ul{
+    list-style: none;
+    margin-top: 20px;
+}
+.footer .row .footer3  .betting01 ul li{
+    padding-top: 20px;
+}
+.footer .row .footer3  .betting01 ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.footer .row .footer3  .betting01 ul li a:hover{
+    color: rgb(209, 127, 5);
+}
+.background-img{
+  display: none;
+}
+
+
+
+
+
+/* responsive-css */
+@media only screen and (max-width: 768px){
+  .about{
+    width: 100%;
+    height: auto;
+    /* border: 1px solid black; */
+    /* position: relative; */
+    background-color: rgb(25, 25, 25);
+  }
+ .about .container{
+    width: 100%;
+    height: auto;
+    /* border: 1px solid black; */
+    /* position: relative; */
+    background-color: rgb(25, 25, 25);
+
+ }
+ .about .container .row .about_content01{
+    width: 100%;
+    height: auto;
+    /* border: 1px solid black; */
+ }
+ .about .container .row .about_content01 h1{
+    color: rgb(255, 204, 0);
+    font-weight: bold;
+    margin-top: 10px;
+ }
+ .about .container .row .about_content01 p{
+    line-height: 30px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 17px;
+    color: white;
+ }
+ .about .container .row .about_img{
+    width: 100%;
+    height: auto;
+    /* border: 1px solid black; */
+ }
+ .about .container .row .about_img img{
+    width: 100%;
+    height: auto;
+    /* border: 1px solid black; */
+    padding: 10px;
+    margin-top: 0px;
+ }
+ 
+/* demo-section-start */
+.demo{
+  width: 100%;
+  height: auto;
+  /* border: 1px solid black; */
+}
+.demo .container{
+  width: 100%;
+  height: auto;
+  /* border: 1px solid black; */
+  margin-top: 30px;
+}
+.demo .container .row .demo_img{
+  width: 100%;
+  height: auto;
+  /* border: 1px solid black; */
+}
+.demo .container .row .demo_img img{
+  width: 100%;
+  height: auto;
+  padding: 10px;
+}
+.demo .container .row .demo_content{
+  width: 100%;
+  height: 500px;
+  /* border: 1px solid black; */
+  position: relative;
+  background-color: #000000;
+  margin-top: 15px;
+}
+.demo .container .row .demo_content .demoid_content{
+  width: 70%;
+  height: auto;
+  /* border: 1px solid rgb(224, 64, 64); */
+  border-radius: 5px;
+  background-color: rgb(23, 23, 23);
+  padding: 20px;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  box-shadow: 2px 4px 10px gray,
+  -2px -4px 10px gray;
+  color: #fff;
+  transform: translate(-50%, -0%);
+}
+ .lines::after{
+  content: "";
+  display: block;
+width: 100%;
+
+height: 1px;
+background-color: #ff5f1f;
+margin: 15px 10px;
+
+}
+.demo .container .row .demo_content .demoid_content h1{
+  margin-top: 5px;
+}
+.demo .container .row .demo_content .demoid_content h1::after{
+  content: "";
+  display: block;
+  background-color: #ff5f1f;
+  margin: 5px 4px;
+  width: 100px;
+  height: 5px;
+  /* border-radius: 4px; */
+}
+.demo .container .row .demo_content .demoid_content p{
+  padding: 5px;
+}
+.demo .container .row .demo_content .demoid_content button{
+  padding: 5px 20px;
+  border: none;
+  background-color: #ff5f1f;
+  color: #fff;
+  border-radius: 4px;
+}
+/* demo-section-end */
+.conculsion .container .row .conclusion_content a button{
+  position: relative;
+  left: 40%;
+  padding: 5px 20px;
+}
+   
+
+.footer{
+  width: 100%;
+  height: auto;
+  /* border: 1px solid black; */
+  background-color: rgb(28, 28, 28);
+}
+
+
+.footer .row .footer1{
+  width: 100%;
+  height: 300px;
+  /* border: 1px solid black; */
+}
+.footer .row .footer1 img{
+  width: 100px;
+  height: 70px;
+  border-radius: 20px;
+  margin: 20px 0%;
+}
+.footer .row .footer1 h5{
+  font-weight: bold;
+  text-align: start;
+  color: white;
+}
+.footer .row .footer1 p{
+  line-height: 25px;
+  color: white;
+  font-size: 15px;
+}
+.footer .row .footer1 .icons{
+  width: 100%;
+  height: 70px;
+  /* border: 1px solid white; */
+
+}
+.footer .row .footer1 .icons ul{
+  display: flex;
+  list-style: none;
+}
+.footer .row .footer1 .icons ul li{
+  padding: 10px;
+  font-size: 30px;
+}
+.footer .row .footer1 .icons ul li .fa-instagram{
+  color: blueviolet;
+}
+.footer .row .footer1 .icons ul li .fa-facebook{
+  color: rgb(43, 73, 226);
+}
+.footer .row .footer1 .icons ul li .fa-whatsapp{
+  color: rgb(24, 224, 34);
+}
+.footer .row .footer2{
+  width: 100%;
+  height: 500px;
+  /* border: 1px solid black; */
+  display: flex;
+}
+
+.footer .row .footer2  .betting{
+  width: 50%;
+  height: 500px;
+  /* border: 1px solid black; */
+}
+.footer .row .footer2  .betting h5{
+  margin-top: 30px;
+  font-size: 20px;
+  font-weight: 500;
+  color: yellow;
+}
+.footer .row .footer2  .betting ul{
+  list-style: none;
+  margin-top: 20px;
+}
+.footer .row .footer2  .betting ul li{
+  padding-top: 15px;
+}
+.footer .row .footer2  .betting ul li a{
+  text-decoration: none;
+  font-size: 15px;
+  color: rgb(255, 255, 255);
+}
+.footer .row .footer2  .betting ul li a:hover{
+  color: rgb(209, 127, 5);
+}
+.footer .row .footer2  .betting01{
+  width: 50%;
+  height: 500px;
+  /* border: 1px solid black; */
+}
+.footer .row .footer2  .betting01 h5{
+  margin-top: 30px;
+  font-size: 20px;
+  font-weight: 500;
+  color: yellow;
+}
+.footer .row .footer2  .betting01 ul{
+  list-style: none;
+  margin-top: 20px;
+}
+.footer .row .footer2  .betting01 ul li{
+  padding-top: 15px;
+}
+.footer .row .footer2  .betting01 ul li a{
+  text-decoration: none;
+  font-size: 15px;
+  color: rgb(255, 255, 255);
+}
+.footer .row .footer2  .betting01 ul li a:hover{
+  color: rgb(209, 127, 5);
+}
+
+.footer .row .footer3{
+  width: 100%;
+margin-top: -50px;
+  /* border: 1px solid black; */
+  display: flex;
+}
+.footer .row .footer3  .betting{
+  width: 50%;
+ 
+  /* border: 1px solid black; */
+}
+.footer .row .footer3  .betting ul{
+  list-style: none;
+  margin-top: 20px;
+}
+.footer .row .footer3  .betting ul li{
+  padding-top: 15px;
+}
+.footer .row .footer3  .betting ul li a{
+  text-decoration: none;
+  font-size: 15px;
+  color: rgb(255, 255, 255);
+}
+.footer .row .footer3  .betting ul li a:hover{
+  color: rgb(209, 127, 5);
+}
+.footer .row .footer3  .betting h5{
+  margin-top: 30px;
+  font-size: 20px;
+  font-weight: 500;
+  color: yellow;
+}
+.footer .row .footer3  .betting01{
+  width: 50%;
+  
+  /* border: 1px solid black; */
+}
+.footer .row .footer3  .betting01 h5{
+  margin-top: 30px;
+  font-size: 20px;
+  font-weight: 500;
+  color: yellow;
+}
+.footer .row .footer3  .betting01 ul{
+  list-style: none;
+  margin-top: 20px;
+}
+.footer .row .footer3  .betting01 ul li{
+  padding-top: 15px;
+}
+.footer .row .footer3  .betting01 ul li a{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+}
+.footer .row .footer3  .betting01 ul li a:hover{
+  color: rgb(209, 127, 5);
+}
+}
+
+@media only screen and (max-width: 768px){
+  .background-img{
+    width: 100%;
+    height: 500px;
+    background-color: black;
+    background-image: url(WhatsApp\ Image\ 2024-12-10\ at\ 12.05.41_138a17ec.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+display: block;
+position: relative;
+/* border: 1px solid white; */
+
+  }
+  .background-img a > button{
+    padding: 10px 30px;
+    font-size: 20px;
+    background-color: green;
+    border-radius: 10px;
+    color: #fff;
+    border: none;
+    position: absolute;
+    top: 80%;
+    left: 1%;
+  }
+
+  #myHeader{
+    height: 80px;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: linear-gradient(90deg, rgb(20, 52, 92) 0%, rgb(24, 23, 23) 65%, rgb(71, 37, 22) 87%, rgb(71, 54, 21) 93%);
+   
+  }
+  .header {
+  color: white;
+  z-index: 1;
+  display: block;
+  }
+  /* <header> */
+.rock{
+    width: 60px;
+    /* border: 1px solid black; */
+}
+.gpo .button-section2 {
+text-align: center;
+   padding: auto;
+   border: none;
+   width: 100%;
+   display: none;
+}
+
+  
+  .button-section2 .button {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px 20px;
+    background-color: white;
+    background: linear-gradient(to left,white, gray);
+    color: #fff;
+    color: black;
+    border: none;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 5px;
+    transform: skew(-20deg);
+    /* border: 1px solid black; */
+    
+  }
+  .btn-primary{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transform: skew(-20deg);
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff5f1f;
+   /* position: relative;
+   left: -40px; */
+   margin-left: -50px;
+  }
+  .btn-warning{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transform: skew(-20deg);
+    display: inline-block;
+    padding: 10px 20px;
+    /* position: relative;
+   left: -40px; */
+   
+  }
+  .rae #appButton{
+    width: 100px;
+    height: 50px;
+    display: none;
+  }
+  .text-end{
+    /* border: 1px solid black; */
+    position: relative;
+    
+    top: 0%;
+  left: 100%;
+  transform: translate(12%, -110%);
+  }
+}
+
+/* responsive-css */
+    </style>
+</head>
+<body>
+ <!--navbar start-->
+ <div class="header" id="myHeader">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-1 col-6">
+                <a href="/"><img class="rock" src="log.webp" alt="Online Cricket ID"></a>
+            </div>
+            <div class="col-sm-7 col-12 gpo">
+                <section class="button-section2">
+                    <a href="https://api.whatsapp.com/send?phone=918743810185&text=Hello,%20Cricket%20ID"><button class="button" type="button">CASINO</button></a>
+                    <a href="https://api.whatsapp.com/send?phone=918743810185&text=Hello,%20Cricket%20ID"><button class="button" type="button">INSTANT GAMES</button></a>
+                    <a href="https://api.whatsapp.com/send?phone=918743810185&text=Hello,%20Cricket%20ID"><button class="button" type="button">HOT GAMES </button></a>
+                    <a href="https://api.whatsapp.com/send?phone=918743810185&text=Hello,%20Cricket%20ID"><button class="button" type="button">SPORTS</button></a>
+                    <a href="https://api.whatsapp.com/send?phone=918743810185&text=Hello,%20Cricket%20ID"><button class="button" type="button">BONUS</button></a>
+
+                  </section>
+            </div>
+            <div class="col-sm-3 col-6">
+                <div class="text-end">
+                <a href="https://api.whatsapp.com/send?phone=918743810185&text=Hello,%20Cricket%20ID"><button type="button" class="btn btn-primary">Login</button></a>
+                <a href="https://api.whatsapp.com/send?phone=918743810185&text=Hello,%20Cricket%20ID"><button type="button" class="btn btn-warning">Signup</button></a>
+            </div>
+            </div>
+            <div class="col-sm-1 col-6 rae">
+                <a href="/"><img src="fomo7App.webp" id="appButton"alt="download app" width="100%"></a>
+            </div>
+        </div>
+      </div>
+  </div>
+
+
+  
+
+<!-- background-img -->
+<div class="background-img">
+<a href=""><button type="button">WhatsApp</button></a>
+</div>
+
+<!-- background-img -->
+
+<div class="lotus my-0">
+    <h1 class="text-center  fw-bold text-warning ">Goexch9</h1>
+  </div>
+
+<!-- about-section-start -->
+ <div class="about">
+  <div class=" container ">
+    <div class="row">
+    <div class="col-sm-6 col-6 about_content01">
+      <h1>Goexch9 About</h1>
+      <p>Goexch9 – a Secure Way to Bet on Sports & Casino Games , The way of betting has changed completely with the beginning of diverse digital platforms that are working as betting exchanges and bookmakers. The crucial thing is to reach a recognized online betting ID that has expertise enough in offering you betting exchanges. When you search for the top and trusted betting ID providers with a proven track record of betting, you will surely find varied big names. Registering for the online betting ID or a betting exchange ID at a recognized name will be a crucial decision to make. GoExch9 is by far the trusted an recognized online sports and casino betting platform where you can register for the online betting ID in just a few steps and without extra efforts. The betting ID registration will take no longer time. It is backed by diverse monetary benefits. Following a few steps will unlock the doors of betting opportunities and provide you with a seamless way to bet wisely and securely. You will get complete assistance and peace of mind with higher engagement. If you are looking for convenient ways to bet wisely on all sport betting options, start your journey with GoExch9 betting ID.</p>
+    </div>
+    <div class="col-sm-6 col-6 about_img">
+<img src="Lotus.jpg.webp" alt="">
+    </div>
+</div>
+  </div>
+ </div>
+<!-- about-section-end -->
+
+<!-- exchange-id-start -->
+<div class="exchange">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 exchange_content">
+<h1>How to get Go Exchange ID?</h1>
+<p>Applying for the Go Exchange ID will be an easy way to start your betting journey. The procedure will need a few steps and clicks only. The first step that is required for the Go Exchange ID is browsing the official website of GoExch9. Here, you are advised to read all terms and conditions and know about the privacy policy along with betting guidelines. These steps will be crucial to clear your doubts and help you make an informed decision to start your betting journey. Now, click on the link that is provided to fill in the form with all personal details. Never share the false details or your betting account may be suspended. Keep in mind that the personal details are required only for one time and to share on the official website of GoExch9. You have another option of getting access to Go Exchange ID is downloading the betting app on Android or iOS based devices. Now, you will receive an OTP on the registered mobile number and a message on the registered email ID. Once you provide the details, you will be allowed to create a password with the option of getting GoExch9 betting ID. Funding your betting account is a crucial step to begin the betting journey. You can adopt the right mode of payment that is suitable for you and secure.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- exchange-id-end -->
+
+<!-- goexchange-start -->
+ <div class="goexchange">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 goexhange_content">
+<h2>How to get Goexch9 Login?</h2>
+<p>Once you complete the procedure for online betting ID registration, you need to focus on entering the betting world through a valid betting exchange ID. GoExch9 Login is the crucial step to start and manage your betting account. Now, you have to click on the login button and provide the login credentials that include a betting exchange ID and password. Never share the betting ID and password with anyone. If you do so, you may be the victim of a fraud or lose your account details to hackers. Login is required to submit at the time of entering the betting world. Once you complete the login, you will be allowed to explore varied markets in all sports and get an opportunity to play casino games, card games, live dealer games, fantasy sports, virtual games, and all other types of betting options. It will be the crucial step to provide you with live betting lines. You will also get access to betting odds so that you can make an informed decision to bet or wait for the right moment. After completing the betting ID login with Goexch9 Login, you can make changes in profiles, keep an eye on the betting history, check the transaction history, and get a lot more. A betting account is well-managed by completing the successful GoExch9 login that you can complete in just a few seconds.</p>
+            </div>
+        </div>
+    </div>
+ </div>
+<!-- goexchange-end -->
+
+<!-- demo-id-start -->
+ <div class="demo">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-9 col-9 demo_img">
+                <img src="lotus-detail.webp" alt="">
+            </div>
+            <div class="col-xl-3 col-3 demo_content">
+<div class="demoid_content">
+    <h1>DEMO ID</h1>
+    <div class="lines"></div>
+    <p>Username : DEMOEX99</p>
+    <p>Password : Abcd1234</p>
+    <div class="lines"></div>
+    <p>1 Point = Rupee</p>
+    <p>Minium Deposit = ₹ 100</p>
+    <p>Currency = ₹ – Bitcoin</p>
+    <div class="lines"></div>
+    <a href=""><button type="button">Whatsapp</button></a>
+</div>
+            </div>
+        </div>
+    </div>
+ </div>
+<!-- demo-id-end -->
+<!-- casino-games-start -->
+<div class="games">
+    <div class="container">
+        <h1>Play Online Casino games at Goexchange</h1>
+        <p>GoExchange has carved a special niche for offering you a seamless way of betting- allowing you explore diverse casino games in just a few clicks. Countless options in casino games are available that will be accessible through the GoExchange betting ID. Follow the step to complete the login and you will get access to betting exchange ID at GoExchange. Diverse gaming options will be available in a click to choose the best casino games that include but not limited to Slots, Blackjack, Poker, Baccarat, Roulette, , Craps, Keno, Bingo, Table games, Big Six wheel, Lottery, Scratch cards, Sic bo, Live dealer games, Pai gow poker, Card games, Caribbean stud poker, Casino Matchmaker, Specialty games, and Teen patti. Varied other options in casino games will be accessible in just a few clicks that you can get by simply registering for the online casino ID or GoExch9 betting ID. Your satisfaction will be crucial for the team of dedicated professionals and they leave no stone unturned in ensuring you are moving on the right track of successful betting journey. You will also get access to varied live dealer games, and poker games.</p>
+    </div>
+</div>
+
+<!-- casino-games-end -->
+
+<!-- conculsion-start -->
+ <div class="conculsion">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 conclusion_content">
+<h1 class="text-center">Goexch9 & Go Exchange Whatsapp Number</h1>
+<p>Staying in touch with the experts will be a crucial point to consider if you are starting your betting journey. Goexch9 & Go Exchange WhatsApp Number will be right source for this. You can get the number to get in touch with experts, know about the live betting lines, check the betting history, and keep an eye on varied other things. Your satisfaction will be crucial for the team of dedicated professionals and they leave no stone unturned in ensuring you are moving on the right track of success. Check all details and start your betting journey securely and wisely. This way of betting will be full of amazing features.</p>
+<a href=""><button  type="button">Get ID</button></a>
+            </div>
+        </div>
+    </div>
+ </div>
+<!-- conculsion-end -->
+
+
+<!-- footer-section -->
+ <div class="container-fluid footer">
+    <div class="row">
+        <div class="col-xl-2 footer1">
+            <img src="log.webp" alt="">
+            <h5>Follow Us</h5>
+            <p>Get fast and secure Best Online Cricket Betting ID at Ganga Online Book, The top cricket exchange and Online Cricket ID provider. Enjoy fast ID</p>
+<div class="icons">
+<ul>
+    <li><i class="fa-brands fa-instagram"></i></li>
+    <li><i class="fa-brands fa-facebook"></i></li>
+    <li><i class="fa-brands fa-whatsapp"></i></li>
+</ul>
+</div>
+        </div>
+        <div class="col-xl-5 footer2">
+
+    <div class="betting">
+        <h5>Online Betting Sites</h5>
+        <ul>
+            <li><a href="">⮚ Lotus365</a></li>
+            <li><a href="">⮚ Rajbet</a></li>
+            <li><a href="">⮚ Reddy-Anna</a></li>
+            <li><a href="">⮚ Mahadev Online Book</a></li>
+            <li><a href="">⮚ Casino Betting ID</a></li>
+            <li><a href="">⮚ World777</a></li>
+            <li><a href="">⮚ Online Betting ID</a></li>
+            <li><a href="">⮚ Yolo247</a></li>
+        </ul>
+    </div>
+    <div class="betting01">
+<h5>Online Betting Portals</h5>
+   
+    <ul>
+        <li><a href="">⮚ Goexch9</a></li>
+        <li><a href="">⮚ Mostbet</a></li>
+        <li><a href="">⮚ Dream-Exchange</a></li>
+        <li><a href="">⮚ Jetexch9</a></li>
+        <li><a href="">⮚ BC Games</a></li>
+        <li><a href="">⮚ 1xBET</a></li>
+        <li><a href="">⮚ Lords Exch ID</a></li>
+        <li><a href="">⮚ Mony777</a></li>
+    </ul>
+</div>
+        </div>
+        <div class="col-xl-5 footer3">
+            <div class="betting">
+                <h5>Popular searcher</h5>
+                <ul>
+                    <li><a href="">⮚ T20-Asia-Cup</a></li>
+                    <li><a href="">⮚ Rajbet</a></li>
+                    <li><a href="">⮚ Reddy-Anna</a></li>
+                    <li><a href="">⮚ Mahadev Online Book</a></li>
+                    <li><a href="">⮚ Casino Betting ID</a></li>
+                    <li><a href="">⮚ World777</a></li>
+                    <li><a href="">⮚ Online Betting ID</a></li>
+                    <li><a href="">⮚ Yolo247</a></li>
+                </ul>
+            </div>
+            <div class="betting01">
+        <h5>Quick Links</h5>
+           
+            <ul>
+                <li><a href="">⮚ Goexch9</a></li>
+                <li><a href="">⮚ Mostbet</a></li>
+                <li><a href="">⮚ Dream-Exchange</a></li>
+                <li><a href="">⮚ Jetexch9</a></li>
+                <li><a href="">⮚ BC Games</a></li>
+                <li><a href="">⮚ 1xBET</a></li>
+                <li><a href="">⮚ Lords Exch ID</a></li>
+                <li><a href="">⮚ Mony777</a></li>
+            </ul>
+        </div>
+        </div>
+    </div>
+</div>  
+
+
+
+<a href="https://api.whatsapp.com/send?phone=&text=olá" class="whatsapp-button" target="_blank" style="position: fixed;  right: 15px; bottom: 10px;">
+  <img src="https://i.ibb.co/VgSspjY/whatsapp-button.png" alt="botão whatsapp" class=" what_sapp">
+</a>
+   
+</body>
+</html>
